@@ -5,7 +5,7 @@ body {
 
 @font-face {
   font-family: text;
-  src: url(https://cdn.glitch.com/c5e4ac83-e3a3-46cb-8404-3e3fe3c16379%2FYouTubeSansDark-Black.ttf?v=1621011936730); /* Путь к файлу со шрифтом */
+  src: url(YouTubeSansDark-Black.ttf); /* Путь к файлу со шрифтом */
 }
 
 a {
