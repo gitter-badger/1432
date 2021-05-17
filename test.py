@@ -1,6 +1,15 @@
 a = 2
 print(a)
 
+# %%перевод числа в СИ
+value = 1000
+sys = 16
+result = ''
+while value != 0:
+    result = str(value % sys) + result
+    value = value // sys
+print(result)
+
 # %%проверить число на одинаковые цифры
 value = '1111'
 len(value) == value.count(value[0])
@@ -79,7 +88,7 @@ def f2(n):
   else:
     return 0
 
-for x in range (20):
+for x in range (10):
     print(f2(x))
 
 for i in range(191600, 192020 + 1):
@@ -89,3 +98,50 @@ for i in range(191600, 192020 + 1):
             if i % d == 0:
                 print(i, i // d)
             d = d + 1
+
+#%% Дел(a,9) ^ (Дел (280,x) → _Дел(a,x) → Дел(730,x))
+#(a % 9 == 0) and ((280 % x == 0) <= (not(a % x <= not (730)))
+# не работает
+formule = int()
+for a in range(1,4):
+    flag = 1
+    for x in range(1,1000):
+        if (a % 9 == 0) and ((280 % x == 0) != (a % x != 730)) == 0:
+            flag = 0
+    if flag == 1:
+        print(a)
+
+# %%сколько цифр на 34 ; 59 из числа 1 с помощью програм состоящих из 6 команд
+# +1 +2 *2
+def f(n, end, k):
+    if n > end or k > 6:
+        return 0
+    if n == end:
+        return 1
+    return f(n + 1, end, k + 1) + f(n + 2, end, k + 1) + f(n * 2, end, k + 1)
+count = 0
+def m(n1,n2):
+    global count
+    for x in range(n1, n2 + 1):
+        if f(1, x, 0) != 0:
+            count += 1
+m(34,59)
+print(count)
+
+# %%
+def f(n):
+  d = 2
+  k = 1
+  while n > d * d:
+    if n % d == 0:
+      k = k + 1
+      break
+    d = d + 1
+  if d * d == n:
+    k = k + 1
+  if k > 1:
+    return 0
+  else:
+    return 1
+print(f(31))
+print(f(6))
