@@ -113,23 +113,23 @@ for a in range(1,4):
 
 # %%сколько цифр на 34 ; 59 из числа 1 с помощью програм состоящих из 6 команд
 # +1 +2 *2
-def f(n, end, k):
+def f1(n, end, k):
     if n > end or k > 6:
         return 0
     if n == end:
         return 1
-    return f(n + 1, end, k + 1) + f(n + 2, end, k + 1) + f(n * 2, end, k + 1)
+    return f1(n + 1, end, k + 1) + f1(n + 2, end, k + 1) + f1(n * 2, end, k + 1)
 count = 0
 def m(n1,n2):
     global count
     for x in range(n1, n2 + 1):
-        if f(1, x, 0) != 0:
+        if f1(1, x, 0) != 0:
             count += 1
 m(34,59)
 print(count)
 
 # %%
-def f(n):
+def f3(n):
   d = 2
   k = 1
   while n > d * d:
@@ -143,5 +143,5 @@ def f(n):
     return 0
   else:
     return 1
-print(f(31))
-print(f(6))
+print(f3(31))
+print(f3(6))
