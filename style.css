@@ -1,0 +1,52 @@
+body {
+	font-size: 30px;
+	font-family: text;
+}
+
+@font-face {
+  font-family: text;
+  src: url(https://cdn.glitch.com/c5e4ac83-e3a3-46cb-8404-3e3fe3c16379%2FYouTubeSansDark-Black.ttf?v=1621011936730); /* Путь к файлу со шрифтом */
+}
+
+a {
+	text-decoration: underline; /* Добавляем подчеркивание */
+}
+
+.mc-c {
+	color: white;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-scheme-background: white;
+        --color-scheme-text-color: black;
+    }
+		a {
+			color: black; /* Цвет обычной ссылки */ 
+		}		
+}
+
+/* Тёмная тема */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-scheme-background: black;
+        --color-scheme-text-color: white;
+    }
+		a {
+			color: white; /* Цвет обычной ссылки */ 
+		}
+}
+
+/* Usage */
+html {
+    background: var(--color-scheme-background);
+    color: var(--color-scheme-text-color);
+}
+
+a:visited {
+    color: none; /* Цвет посещённой ссылки */
+   } 
+a:hover {
+    color: red; /* Цвет ссылки при наведении на нее курсора мыши */  
+   }
