@@ -1,5 +1,5 @@
 {
     "python.dataScience.jupyterServerURI": "local",
-    "python.pythonPath": "/home/gitpod/.pyenv/versions/3.8.9/bin/python",
+    "python.pythonPath": "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe",
     "liveServer.settings.multiRootWorkspaceName": "1432"
 }
