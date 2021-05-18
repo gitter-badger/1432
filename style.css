@@ -3,6 +3,16 @@ body {
 	font-family: text;
 }
 
+.hljs {
+    max-height: 500px;
+    font-size: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
 @font-face {
   font-family: text;
   src: url(YouTubeSansDark-Black.ttf); /* Путь к файлу со шрифтом */
@@ -50,14 +60,3 @@ a:visited {
 a:hover {
     color: red; /* Цвет ссылки при наведении на нее курсора мыши */  
    }
-
-
-.hljs {
-    max-height: 500px;
-    font-size: 20px;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-}
