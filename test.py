@@ -145,3 +145,97 @@ def f3(n):
     return 1
 print(f3(31))
 print(f3(6))
+
+# %%
+def f4(n):
+    k = 0
+    d = 2
+    while n > d * d:
+        if n % d==0:
+            k += 2
+        d=d+1
+        if k > 2:
+            break
+    if n == d * d:
+        k += 1
+    if k == 2:
+        return 1
+    else:
+        return 0
+#print (f4(5))
+for i in range (190201,190220 + 1):
+    if f4(i)==1:
+        d=2
+        while i > d * d:
+            if i % d ==0:
+                print (i, i //d)
+                break
+            d=d+1
+
+# %%
+def f5(n):
+    d=2; k=1
+    while n>d*d:
+        if n%d==0:
+            k+=1
+            break
+        d=d+1
+    if d*d==n:
+        k=k+1
+    if k>1:
+        return 0
+    else:
+        return 1
+#print (f5(31))
+#print (f5(6))
+t=1
+for i in range (3532000,3532160+1):
+    if f5(i)==1:
+        print (t,i)
+        t=t+1
+
+# %% есть цифровой диапозон от 1045 до 8963
+# найти количество чисел которые а) делятся на 5 б) делятся на 7 в) не делятся на 11 13 17 19 (не кратны им) и минимальное число
+count = 0
+min_count = 0
+for i in range(1045, 8963 + 1):
+    if i % 5 == 0:
+        if i % 7 == 0:
+            if i % 11 != 0:
+                if i % 13 != 0:
+                    if i % 17 != 0:
+                        if i % 19 != 0:
+                            count += 1
+                            if min_count == 0:
+                                min_count = i
+print(min_count)
+print(count)
+
+
+# %% узнать все делители числа
+x1 = 1000
+for i in range(x1, 0, -1):
+    if (x1 % i == 0):
+        print(i)
+
+# %%
+def f6(n):
+    d=2; k=1
+    while n>d*d:
+        if n%d==0:
+            k+=1
+            break
+        d=d+1
+    if d*d==n:
+        k=k+1
+    if k>1:
+        return 0
+    else:
+        return 1
+#print (f(31))
+#print (f(6))
+t=1
+for i in range (3532000,3532160+1):
+    if f6(i)==1:
+        print (t,i)
+        t=t+1
