@@ -30,8 +30,11 @@ for a in s:
                 for e in s:
                     for f in s:
                         st = a + b + c + k + e + f
-                        if st.count('М') == s.count('М') and st.count('О') == s.count('О') and st.count('Л') == s.count('Л') and st.count('К') == s.count('К'):
-                            d.add(st)
+                        if st.count('М') == s.count('М'):
+                            if st.count('О') == s.count('О'):
+                                if st.count('Л') == s.count('Л'):
+                                    if st.count('К') == s.count('К'):
+                                        d.add(st)
 print(d)
 print(len(d))
 
