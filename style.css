@@ -60,3 +60,11 @@ a:visited {
 a:hover {
     color: red; /* Цвет ссылки при наведении на нее курсора мыши */  
    }
+
+
+#div1 {
+    float: left;
+}
+#div2 {
+    float: left;
+}
