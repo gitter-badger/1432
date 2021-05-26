@@ -295,3 +295,13 @@ for i in range (3532000,3532160+1):
     if f6(i)==1:
         print (t,i)
         t=t+1
+
+# %% значение выражения записали в системе счисления с основанием 9
+# сколько цифр 8 содержится в этой записи?
+value = 81 ** 17 + 3 ** 24 - 45
+sys = 9
+result = ''
+while value != 0:
+    result = str(value % sys) + result
+    value = value // sys
+print(result.count('8'))
