@@ -1,10 +1,6 @@
-# ArmyAutosolverPublic
-Программа автоматически решает тесты для военной подготовки с сайта http://online.patriotsport.moscow/
 Для работы программы нужен Python версии 3.x и библиотека requests.
-Если не установлен python то:https://thecode.media/py-install/
-Если не установлена библиотека requests то после установки питона в консоль пишем python -m pip install requests и все должно работать.
-Инструкция по пользованию программой:
-Гайд по работе с системой автоматического решения заданий 
+Если не установлен python то: https://thecode.media/py-install/
+Если не установлена библиотека requests то после установки питона в консоль пишем: python -m pip install requests и все должно работать.
 
 1. Заходим на сайт Список тренингов
 ![image](https://user-images.githubusercontent.com/72671088/111904101-23f4d300-8a56-11eb-85cf-fb6d9323c828.png)
